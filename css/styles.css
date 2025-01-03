@@ -8,6 +8,51 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: rgb(35, 160, 35);
+    position: relative;
+}
+
+.gameOver {
+    background-color: rgb(246, 23, 23);
+    width: 800px;
+    border: 10px solid yellow;
+    border-radius: 15px;
+    height: 500px;
+    position: absolute;
+    z-index: 111;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 4rem ;
+    display: none;
+}
+
+.gameOver h1 {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+.gameOver h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: rgb(255, 255, 0);
+}
+
+.gameOver button {
+    padding: 30px;
+    border: 4px solid rgb(255, 255, 0);
+    background-color: red;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 20px;
+    color: rgb(255, 255, 0);
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+.gameOver button:hover {
+    opacity: 1;
 }
 
 .game-board {
@@ -46,6 +91,10 @@ h1 {
     bottom: 0;
     width: 80px;
     animation: pipe-animation 2s infinite linear;
+}
+
+.block {
+    display: block;
 }
 
 @keyframes pipe-animation {
